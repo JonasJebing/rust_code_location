@@ -6,7 +6,7 @@ A library to automatically acquire a code location in a rust source code file.
 
 ```toml
 [dependencies]
-code_location = "1.0"
+code_location = "1.1"
 ```
 
 ## Usage
@@ -24,6 +24,17 @@ fn main() {
     println!("The location above is: {}", code_location);
 }
 ```
+
+## `serde` serialization and deserialization support
+
+[`serde`] support can be enabled with the `"serde"` feature:
+
+```toml
+[dependencies]
+code_location = { version = "1.1", features = ["serde"] }
+```
+
+[`serde`]: https://crates.io/crates/serde
 
 ## License
 

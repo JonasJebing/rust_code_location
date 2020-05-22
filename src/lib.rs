@@ -28,11 +28,17 @@
 //! assert_eq!(code_location.column, 35);
 //! ```
 //!
+//! # `serde` serialization and deserialization support
+//!
+//! [`serde`] support can be enabled with the `"serde"` feature.
+//!
+//! [`serde`]: https://crates.io/crates/serde
+//!
 //! # `#![no_std]`
 //!
-//! `code_location` only depends on the [`core`] library.
+//! `code_location` does not depend on the [standard library].
 //!
-//! ['core']: https://doc.rust-lang.org/core/index.html
+//! [standard library]: https://doc.rust-lang.org/std/index.html
 
 #![no_std]
 
@@ -52,6 +58,7 @@ use core::fmt;
 /// assert_eq!(code_location.column, 35);
 /// ```
 #[derive(Copy, Clone, Eq, PartialEq, Hash, Ord, PartialOrd, Debug)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct CodeLocation {
     pub file: &'static str,
     pub line: u32,
