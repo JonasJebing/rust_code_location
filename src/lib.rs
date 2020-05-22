@@ -1,5 +1,3 @@
-//! # `code_location`
-//!
 //! A library to automatically acquire a code location in a rust source code file.
 //!
 //! The library provides the [`code_location!()`] macro.
