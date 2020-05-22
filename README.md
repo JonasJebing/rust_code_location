@@ -16,6 +16,8 @@ use code_location::{code_location, CodeLocation};
 
 fn main() {
     println!("I am printing from {}", code_location!());
+    let code_location: CodeLocation = code_location!();
+    println!("I am also printing the location from above: {}", code_location);
 }
 ```
 
