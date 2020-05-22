@@ -1,6 +1,6 @@
 [package]
 name = "code_location"
-version = "1.0.0-dev"
+version = "1.0.0"
 authors = ["Jonas Jebing <noreply.jonas.8049@protonmail.com>"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
