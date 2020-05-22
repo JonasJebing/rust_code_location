@@ -15,9 +15,9 @@ code_location = "1.0"
 use code_location::{code_location, CodeLocation};
 
 fn main() {
-    println!("I am printing from {}", code_location!());
+    println!("I am printing from {}", code_location!()); // `I am printing from src/main.rs:4:39`
     let code_location: CodeLocation = code_location!();
-    println!("I am also printing the location from above: {}", code_location);
+    println!("The location above is: {}", code_location); // `The location above is: src/main.rs:5:39`
 }
 ```
 
