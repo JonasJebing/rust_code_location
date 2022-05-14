@@ -1,11 +1,11 @@
 [package]
 name = "code_location"
-version = "1.1.0"
+version = "1.1.1"
 authors = ["Jonas Jebing <noreply.jonas.8049@protonmail.com>"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 description = """
-A library to automatically acquire a code location in a rust source code file.
+UNMAINTAINED! Use std::panic::Location instead!
 """
 edition = "2018"
 repository = "https://github.com/JonasJebing/rust_code_location"

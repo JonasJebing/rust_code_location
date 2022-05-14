@@ -1,5 +1,12 @@
 //! A library to automatically acquire a code location in a rust source code file.
 //!
+//! # UNMAINTAINED
+//!
+//! This library is no longer maintained.
+//! Although it does work fine, I recommend using [`std::panic::Location`] instead.
+//!
+//! # Description
+//!
 //! The library provides the [`code_location!()`] macro.
 //! The macro expands to the [`CodeLocation`] struct
 //! by combining the standard [`file!()`], [`line!()`] and [`column!()`] macros.

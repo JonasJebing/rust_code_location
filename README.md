@@ -2,6 +2,11 @@
 
 A library to automatically acquire a code location in a rust source code file.
 
+## UNMAINTAINED
+
+This library is no longer maintained.
+Although it does work fine, I recommend using `std::panic::Location` instead.
+
 ## Install
 
 ```toml
